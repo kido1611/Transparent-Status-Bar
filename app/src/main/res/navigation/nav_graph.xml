@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainContainerFragment">
+    <fragment
+        android:id="@+id/mainContainerFragment"
+        android:name="id.kido1611.transparentonnavigation.ui.container.MainContainerFragment"
+        android:label="main_container_fragment"
+        tools:layout="@layout/main_container_fragment">
+        <action
+            android:id="@+id/action_mainContainer2Fragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="id.kido1611.transparentonnavigation.ui.detail.DetailFragment"
+        android:label="detail_fragment"
+        tools:layout="@layout/detail_fragment">
+        <action
+            android:id="@+id/action_detailFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="id.kido1611.transparentonnavigation.ui.edit.EditFragment"
+        android:label="edit_fragment"
+        tools:layout="@layout/edit_fragment" />
+</navigation>
